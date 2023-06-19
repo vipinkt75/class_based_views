@@ -1,0 +1,14 @@
+{% extends 'web/base.html' %}
+{% load static extras %}
+
+{% block content %}
+
+{{data|lower}}
+
+{{form}}
+
+{% now 'Y/m/d' %}
+
+{% endblock %}
+
+<p>title: {{object.title}}</p>
